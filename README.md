@@ -1,6 +1,6 @@
 # Proyecto Plataforma Joyería.
 
----
+===========================================================================
 
 Como arrancar el proyecto Primero dirijase al package.json para ver los scripts.
 
@@ -23,13 +23,11 @@ Ejecutar con Terminal: "npm start"
 Que Servidor Es: http://localhost:5000 <br />
 ¡.Conectado a Base De Datos.!
 
-====================================================================================
+===========================================================================
 
 ### `BACK-END` - SERVIDOR API  🧑‍🏫 :
 
-![image](https://user-images.githubusercontent.com/54821048/220687408-aa6ef987-f40c-4aff-afbb-980b93c1e90e.png)
-
-====================================================================================
+# ![image](https://user-images.githubusercontent.com/54821048/220687408-aa6ef987-f40c-4aff-afbb-980b93c1e90e.png)
 
 ## Guiones disponibles
 
