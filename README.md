@@ -22,7 +22,8 @@ Que Servidor Es: http://localhost:5000 <br />
 ¡.Conectado a Base De Datos.!
 ----------------------------------------------------------------------------------------------------------------------------------
 ### `BACK-END` - SERVIDOR API  🧑‍🏫 :
-![BACKEND](https://user-images.githubusercontent.com/54821048/205688946-d039a7c3-f11f-403a-89da-c98a043e556a.png)
+![image](https://user-images.githubusercontent.com/54821048/220687408-aa6ef987-f40c-4aff-afbb-980b93c1e90e.png)
+
 ----------------------------------------------------------------------------------------------------------------------------------
 ## Guiones disponibles
 
