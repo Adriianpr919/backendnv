@@ -50,6 +50,19 @@ orderRouter.get('/find/:id', async (req, res) => {
     }
 });
 
+//count order for admin panel
+orderRouter.get('/countOrders', async (req, res) => {
+
+    try {
+        const countOrders = await Order.countDocuments();
+        res.status(200).json({ count: countOrders });
+
+    } catch (err) {
+        console.log(err.message);
+    }
+
+});
+
 //count sum total for admin panel
 orderRouter.get('/countSumTotal', async (req, res) => {
 
