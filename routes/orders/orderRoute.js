@@ -76,5 +76,4 @@ orderRouter.get('/countSumTotal', async (req, res) => {
 
 });
 
-
 export default orderRouter;

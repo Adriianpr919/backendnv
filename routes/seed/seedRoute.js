@@ -4,6 +4,7 @@ import data from '../../utils/data.js';
 import Blog from '../../models/blogs/blogModel.js';
 import Category from '../../models/categorias/categoryModel.js';
 import Product from '../../models/products/productModel.js';
+import OrderClient from '../../models/orders/orderClientModel.js';
 import Rating from '../../models/ratings/ratingModel.js';
 import Subcategory from '../../models/categorias/subcategoryModel.js';
 import User from '../../models/users/userModel.js';
@@ -21,6 +22,10 @@ seedRouter.get('/', async (req, res) => {
     await Product.remove({});
     const createdProduct = await Product.insertMany(data.products);
 
+    //seed for orders clients
+    await OrderClient.remove({});
+    const createdOrderClient = await OrderClient.insertMany(data.ordersclients);
+
     //seed for blogs
     await Blog.remove({});
     const createdBlog = await Blog.insertMany(data.blogs);
@@ -37,7 +42,7 @@ seedRouter.get('/', async (req, res) => {
     await Rating.remove({});
     const createdRating = await Rating.insertMany(data.rating);
 
-    res.send({ createdUser, createdBlog, createdProduct, createdCategory, createdSubcategory, createdRating });
+    res.send({ createdUser, createdBlog, createdProduct, createdCategory, createdSubcategory, createdRating, createdOrderClient });
 });
 
 export default seedRouter;

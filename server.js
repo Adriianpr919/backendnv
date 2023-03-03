@@ -9,6 +9,7 @@ import categoryRouter from './routes/categorias/categoryRoute.js';
 import subcategoryRouter from './routes/categorias/subcategoryRoute.js';
 import ratingRouter from './routes/ratings/ratingRoute.js';
 import orderRouter from './routes/orders/orderRoute.js';
+import orderclientRouter from './routes/orders/orderClientRoute.js';
 
 const app = express();
 
@@ -25,6 +26,7 @@ app.use('/api/category', categoryRouter);
 app.use('/api/subcategory', subcategoryRouter);
 app.use('/api/rating', ratingRouter);
 app.use('/api/orders', orderRouter);
+app.use('/api/ordersclients', orderclientRouter);
 
 //connect with db
 dotenv.config();
