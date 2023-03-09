@@ -2,7 +2,7 @@
   "name": "backend",
   "type": "module",
   "version": "1.0.0",
-  "description": "",
+  "description": "backend",
   "main": "index.js",
   "engines": {
     "node": "14.x"
@@ -10,6 +10,9 @@
   "scripts": {
     "start": "nodemon server.js"
   },
+  "keywords": [
+    "backend"
+  ],
   "author": "ADRIAN PAEZ",
   "license": "ISC",
   "dependencies": {
