@@ -2,7 +2,6 @@ import express from 'express';
 import User from '../../models/users/userModel.js';
 import bcrypt from 'bcryptjs';
 
-
 const userRouter = express.Router();
 
 //for login user
@@ -15,8 +14,11 @@ userRouter.post('/login', async (req, res) => {
         if (bcrypt.compareSync(req.body.password, user.password)) {
             res.send({
                 _id: user._id,
+                nombres: user.nombres,
+                apellidos: user.apellidos,
                 username: user.username,
                 email: user.email,
+                rol: user.rol,
                 password: user.password,
                 isAdmin: user.isAdmin
             });
@@ -30,15 +32,22 @@ userRouter.post('/login', async (req, res) => {
 // for register user
 userRouter.post('/register', async (req, res) => {
     const newUser = new User({
+        nombres: req.body.nombres,
+        apellidos: req.body.apellidos,
         username: req.body.username,
         email: req.body.email,
+        rol: req.body.rol,
+        isAdmin: req.body.isAdmin,
         password: bcrypt.hashSync(req.body.password)
     });
     const user = await newUser.save();
     res.send({
         _id: user._id,
+        nombres: user.nombres,
+        apellidos: user.apellidos,
         username: user.username,
         email: user.email,
+        rol: user.rol,
         isAdmin: user.isAdmin
     })
 });
@@ -49,8 +58,12 @@ userRouter.put('/update', async (req, res) => {
     //if user exists
     if (user) {
         //if you want to update username or email
+        user.nombres = req.body.nombres || user.nombres;
+        user.apellidos = req.body.apellidos || user.apellidos;
         user.username = req.body.username || user.username;
         user.email = req.body.email || user.email;
+        user.rol = req.body.rol || user.rol;
+        user.isAdmin = req.body.isAdmin || user.isAdmin;
         //I will just update the password
         if (req.body.password) {
             user.password = bcrypt.hashSync(req.body.password);
@@ -59,8 +72,11 @@ userRouter.put('/update', async (req, res) => {
         const updatedUser = await user.save();
         res.send({
             _id: updatedUser._id,
+            nombres: updatedUser.nombres,
+            apellidos: updatedUser.apellidos,
             username: updatedUser.username,
             email: updatedUser.email,
+            rol: updatedUser.rol,
             isAdmin: updatedUser.isAdmin
         });
 

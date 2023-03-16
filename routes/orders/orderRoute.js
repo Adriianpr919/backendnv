@@ -14,6 +14,7 @@ orderRouter.post('/', async (req, res) => {
         email: req.body.email,
         address: req.body.address,
         phone: req.body.phone,
+        marker: req.body.marker,
         subTotal: req.body.subTotal,
         taxPrice: req.body.taxPrice,
         totalPrice: req.body.totalPrice
@@ -23,6 +24,33 @@ orderRouter.post('/', async (req, res) => {
     const order = await newOrder.save();
     res.status(201).send({ message: '¡.Nuevo Orden Creado.!', order });
 
+});
+
+// update order -> from admin panel
+orderRouter.put('/update', async (req, res) => {
+
+    const newOrder = await Order.findById(req.body._id);
+
+    //if order exists
+    if (newOrder) {
+        newOrder.marker = req.body.marker || newOrder.marker;
+        newOrder.isPaid = req.body.isPaid || newOrder.isPaid;
+        newOrder.isDelivered = req.body.isDelivered || newOrder.isDelivered;
+
+        const updatedOrder = await newOrder.save();
+        res.send({
+
+            _id: updatedOrder._id,
+            marker: updatedOrder.marker,
+            isPaid: updatedOrder.isPaid,
+            isDelivered: updatedOrder.isDelivered,
+
+        });
+    } else {
+
+        res.status(401).send({ message: '¡.Pedido NO Encontrado.!' });
+
+    }
 });
 
 //get all orders for user

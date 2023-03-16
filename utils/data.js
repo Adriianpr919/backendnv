@@ -5,29 +5,54 @@ import bcrypt from 'bcryptjs';
 const data = {
     users: [
         {
-            username: "Admin",
-            email: "admin123@gmail.com",
-            password: bcrypt.hashSync("admin"),
+            nombres: "Administrador",
+            apellidos: "Panel",
+            username: "administradorpanel",
+            email: "administradorpanel123@gmail.com",
+            rol: "Administrador",
+            password: bcrypt.hashSync("administradorpanel123"),
             isAdmin: true
         },
         {
-            username: "MarianaAdmin",
-            email: "marianadmin123@gmail.com",
-            password: bcrypt.hashSync("marianadmin"),
+            nombres: "Mariana",
+            apellidos: "Tamayo",
+            username: "marianatamayoadmin",
+            email: "marianatamayoadmin123@gmail.com",
+            rol: "Administrador",
+            password: bcrypt.hashSync("marianatamayoadmin123"),
             isAdmin: true
         },
         {
-            username: "nvstoreAdmin",
-            email: "nvstoreadmin123@gmail.com",
-            password: bcrypt.hashSync("nvstoreadmin"),
+            nombres: "Nury",
+            apellidos: "Valenzuela",
+            username: "nuryvalenzuelaadmin",
+            email: "nuryvalenzueladmin123@gmail.com",
+            rol: "Administrador",
+            password: bcrypt.hashSync("nuryvalenzuelaadmin123"),
             isAdmin: true
         },
         {
-            username: "bebito123",
-            email: "bebito123@gmail.com",
-            password: bcrypt.hashSync("bebito123"),
+            nombres: "bebito",
+            apellidos: "perez",
+            username: "bebitoperez123",
+            email: "bebitoperez123@gmail.com",
+            rol: "Cliente",
+            password: bcrypt.hashSync("bebitoperez123"),
             isAdmin: false
         },
+    ],
+    ordersclients: [
+        {
+            number: "1",
+            reference: "34234234325345464565765765",
+            marker: "dfdfd",
+            client: "dfdf",
+            email: "dssldfol@gmail.com",
+            address: "dfsdfdgrgdfg",
+            description: "fdfdsffgdsg",
+            phone: "3104563652",
+            price: 5666000
+        }
     ],
     blogs: [
         {

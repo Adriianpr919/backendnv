@@ -28,6 +28,7 @@ const orderSchema = new mongoose.Schema({
     email: { type: String, required: true },
     address: { type: String, required: true },
     phone: { type: String, required: true },
+    marker: { type: String, required: true },
     isPaid: { type: Boolean, required: true, default: false },
     isDelivered: { type: Boolean, required: true, default: false },
 }, {
