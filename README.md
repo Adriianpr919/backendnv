@@ -27,21 +27,13 @@ Que Servidor Es: http://localhost:5000 <br />
 
 ===========================================================================
 
-### `BACK-END` - SERVIDOR API  🧑‍🏫 :
+## `BACK-END` - SERVIDOR API  🧑‍🏫 :
 
 # ![image](https://user-images.githubusercontent.com/54821048/220687408-aa6ef987-f40c-4aff-afbb-980b93c1e90e.png)
 
-## Guiones disponibles
-
-## En el directorio del proyecto, puede ejecutar:
-
-### `npm start`
-
-## Ejecuta la aplicación en el modo de desarrollo.
-
 ===========================================================================
 
-### `<h3 align="left">Idiomas y Herramientas:</h3>`
+## `Idiomas y Herramientas. :*`
 
 <p align="left">
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
@@ -67,12 +59,26 @@ Que Servidor Es: http://localhost:5000 <br />
  </a>
 </p>
 
-### `MI INFORMACIÓN`:
+===========================================================================
 
-## Puedes aprender más en el: [https://apr1991lino.vercel.app/)
+### Guiones disponibles
 
-Luego navegue en la plataforma.
+### En el directorio del proyecto, puede ejecutar:
 
-## Feliz Revisión 😎🤞.
+## `npm start`
 
-## Creditos: Este proyecto lo desarrollo Adrián Páez.
+### Ejecuta la aplicación en el modo de desarrollo.
+
+===========================================================================
+
+## `MI INFORMACIÓN. :*`
+
+### Puedes aprender más en el: [https://apr1991lino.vercel.app/)
+
+### Luego navegue en la plataforma.
+
+===========================================================================
+
+## `Feliz Revisión 😎🤞. :*`
+
+### Creditos: Este proyecto lo desarrollo Adrián Páez.
