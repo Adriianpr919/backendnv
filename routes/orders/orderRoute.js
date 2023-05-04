@@ -15,6 +15,7 @@ orderRouter.post('/', async (req, res) => {
         address: req.body.address,
         phone: req.body.phone,
         marker: req.body.marker,
+        comment: req.body.comment,
         subTotal: req.body.subTotal,
         taxPrice: req.body.taxPrice,
         totalPrice: req.body.totalPrice
@@ -34,6 +35,7 @@ orderRouter.put('/update', async (req, res) => {
     //if order exists
     if (newOrder) {
         newOrder.marker = req.body.marker || newOrder.marker;
+        newOrder.comment = req.body.comment || newOrder.comment;
         newOrder.isPaid = req.body.isPaid || newOrder.isPaid;
         newOrder.isDelivered = req.body.isDelivered || newOrder.isDelivered;
 
@@ -42,6 +44,7 @@ orderRouter.put('/update', async (req, res) => {
 
             _id: updatedOrder._id,
             marker: updatedOrder.marker,
+            comment: updatedOrder.comment,
             isPaid: updatedOrder.isPaid,
             isDelivered: updatedOrder.isDelivered,
 

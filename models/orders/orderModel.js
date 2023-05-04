@@ -29,6 +29,7 @@ const orderSchema = new mongoose.Schema({
     address: { type: String, required: true },
     phone: { type: String, required: true },
     marker: { type: String, required: true },
+    comment: { type: String, required: true },
     isPaid: { type: Boolean, required: true, default: false },
     isDelivered: { type: Boolean, required: true, default: false },
 }, {

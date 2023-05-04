@@ -56,10 +56,10 @@ productRouter.put('/update', async (req, res) => {
         product.title = req.body.title || product.title;
         product.category = req.body.category || product.category;
         product.subcategory = req.body.subcategory || product.subcategory;
+        product.tripletecategory = req.body.tripletecategory || product.tripletecategory;
         product.countInStock = req.body.countInStock || product.countInStock;
         product.description = req.body.description || product.description;
         product.price = req.body.price || product.price;
-        product.star = req.body.star || product.star;
         product.sizes = req.body.sizes || product.sizes;
         product.colors = req.body.colors || product.colors;
         product.image = req.body.image || product.image;
@@ -72,10 +72,10 @@ productRouter.put('/update', async (req, res) => {
             title: updatedProduct.title,
             category: updatedProduct.category,
             subcategory: updatedProduct.subcategory,
+            tripletecategory: updatedProduct.tripletecategory,
             countInStock: updatedProduct.countInStock,
             description: updatedProduct.description,
             price: updatedProduct.price,
-            star: updatedProduct.star,
             sizes: updatedProduct.sizes,
             colors: updatedProduct.colors,
             image: updatedProduct.image,
@@ -95,10 +95,10 @@ productRouter.post('/add', async (req, res) => {
         title: req.body.title,
         category: req.body.category,
         subcategory: req.body.subcategory,
+        tripletecategory: req.body.tripletecategory,
         countInStock: req.body.countInStock,
         description: req.body.description,
         price: req.body.price,
-        star: req.body.star + '★',
         sizes: req.body.sizes,
         colors: req.body.colors,
         image: req.body.image,
@@ -110,10 +110,10 @@ productRouter.post('/add', async (req, res) => {
         title: product.title,
         category: product.category,
         subcategory: product.subcategory,
+        tripletecategory: product.tripletecategory,
         countInStock: product.countInStock,
         description: product.description,
         price: product.price,
-        star: product.star,
         sizes: product.sizes,
         colors: product.colors,
         image: product.image,

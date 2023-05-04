@@ -41,18 +41,39 @@ const data = {
             isAdmin: false
         },
     ],
-    ordersclients: [
+    abouts: [
         {
-            number: "1",
-            reference: "34234234325345464565765765",
-            marker: "dfdfd",
-            client: "dfdf",
-            email: "dssldfol@gmail.com",
-            address: "dfsdfdgrgdfg",
-            description: "fdfdsffgdsg",
-            phone: "3104563652",
-            price: 5666000
-        }
+            imageOne: "https://i.ibb.co/jDkXNw2/IMG-3656.jpg",
+            titleOne: "QUIÉNES SOMOS",
+            descriptionOne: "La imagen detrás de Nury Valenzuela, soy una mujer real motivada por el deseo de transmitir el arte a todos nuestros clientes. Nuestro nacimiento e historia ha sido un camino lleno de amor y Fé en Dios a quien debo mi éxito y reconocimiento, Dios ha sido mi fuerza en cada decisión y paso que he dado, él es el verdadero dueño de mi talento. Las joyas que hoy se fabrican bajo mi nombre son el resultado de la disciplina y organización que me ha caracterizado desde muy corta edad, hoy puedo ser ejemplo para otras generaciones de que el trabajo incansable y honesto al final siempre da frutos, con Nury Valenzuela puedo ver materializado mis objetivos y el poder de Dios porque fue él quien me llevá más lejos que mis propios sueños, es por eso que tengo claro que cada prueba que me ha puesto la vida me ha servido de inspiración para plasmar mis sentimientos en una joya de alta calidad. Este mágico proyecto fue escrito y dedicado a Dios para que siempre hiciera Memoria delante de él.",
+            titleTwo: "VISIÓN",
+            descriptionTwo: "Convertimos en una empresa reconocida a nivel internacional destacándonos por nuestros diseños y atención de calidad, logrando fortalecer en nuestros clientes su seguridad y autoestima.",
+            titleThree: "MISIÓN",
+            descriptionThree: "Somos una joyería colombiana, dedicada al diseño de calidad, innovador y elegante, con el propósito de resaltar la belleza de los hombres y mujeres que lucen nuestras piezas.",
+            imageFour: "https://i.ibb.co/DtZqHnS/IMG-3987.jpg",
+            titleFour: "NUESTRO EQUIPO",
+            descriptionFour: "Mi ejemplo ha determinado el futuro de mi hija quien es ahora mi mano derecha, ella adoptá este arte con todo su amor y decidió repartir sus días entre la vocación por la medicina y la joyería de alta calidad, ella es mi mejor equipo, mi inspiración y mi orgullo. Hoy Nury Valenzuela es el reflejo del amor más real que existe.El amor entre una Madre y su hija, sin dejar de lado que este mágico proyecto ser á mediano plazo un amor de tres.",
+            titleFive: "EQUIPO",
+            imageMother: "https://i.ibb.co/G7mTS5K/IMG-5235.jpg",
+            imageDaughter: "https://i.ibb.co/cgNFYQz/IMG-3645.jpg"
+        },
+    ],
+    banners: [
+        {
+            title: "TITULO 1.",
+            image: "https://i.ibb.co/CV0JcY9/1.jpg",
+            description: "COMENTARIOS 1."
+        },
+        {
+            title: "TITULO 2.",
+            image: "https://i.ibb.co/jh7f1Vy/2.jpg",
+            description: "COMENTARIOS 2."
+        },
+        {
+            title: "TITULO 3.",
+            image: "https://i.ibb.co/Cbz3HP1/3.jpg",
+            description: "COMENTARIOS 3."
+        },
     ],
     blogs: [
         {
@@ -89,12 +110,12 @@ const data = {
     products: [
         {
             "title": "Anillo corazón Reborde",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Anillos",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Anillo elaborado en oro 18K con incrustaciones en circón natural.",
             "price": 3590000,
-            "star": "4.5★",
             "sizes": [
                 {
                     "value": "4",
@@ -220,12 +241,12 @@ const data = {
             ],
         }, {
             "title": "Anillo Corazón Pendulo",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Anillos",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Anillo elaborado en oro 18K con incrustaciones en circón natural.",
             "price": 3490000,
-            "star": "4.1★",
             "sizes": [
                 {
                     "value": "4",
@@ -347,12 +368,12 @@ const data = {
             ],
         }, {
             "title": "Anillo Ancho",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Anillos",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Anillo elaborado en oro 18K con incrustaciones en circón natural.",
             "price": 3790000,
-            "star": "4.3★",
             "sizes": [
                 {
                     "value": "4",
@@ -478,12 +499,12 @@ const data = {
             ],
         }, {
             "title": "Anillo Reborde",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Anillos",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Anillo elaborado en oro 18K con incrustaciones en circón natural.",
             "price": 1000000,
-            "star": "4.5★",
             "sizes": [
                 {
                     "value": "4",
@@ -601,12 +622,12 @@ const data = {
             ],
         }, {
             "title": "Dije Corazón Reborde",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circón natural.",
             "price": 2290000,
-            "star": "4.4★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -684,12 +705,12 @@ const data = {
             ],
         }, {
             "title": "Dije Fe",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con turmalinas.",
             "price": 3590000,
-            "star": "4.5★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -783,12 +804,12 @@ const data = {
             ],
         }, {
             "title": "Dije Bendicion",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circon natural.",
             "price": 3390000,
-            "star": "4.1★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -874,12 +895,12 @@ const data = {
             ],
         }, {
             "title": "Dije Faith & Family",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circon natural.",
             "price": 3890000,
-            "star": "4.0★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -965,12 +986,12 @@ const data = {
             ],
         }, {
             "title": "Dije Oso Ted",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circón natural.",
             "price": 3590000,
-            "star": "4.6★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -1072,12 +1093,12 @@ const data = {
             ],
         }, {
             "title": "Dije Oso Bebe",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circon natural.",
             "price": 2690000,
-            "star": "4.0★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -1155,12 +1176,12 @@ const data = {
             ],
         }, {
             "title": "Dije Oso Minimalista",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K.",
             "price": 3290000,
-            "star": "4.0★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -1238,12 +1259,12 @@ const data = {
             ],
         }, {
             "title": "Dije Oso Gordito",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circon natural.",
             "price": 5980000,
-            "star": "4.8★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -1325,12 +1346,12 @@ const data = {
             ],
         }, {
             "title": "Dije Cruz Reborde",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circon natural.",
             "price": 1000000,
-            "star": "4.0★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -1408,12 +1429,12 @@ const data = {
             ],
         }, {
             "title": "Dije cruz Ancha",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circon natural.",
             "price": 1690000,
-            "star": "4.4★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -1495,12 +1516,12 @@ const data = {
             ],
         }, {
             "title": "Dije Niña",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Niños",
+            "subcategory": "Dijes",
+            "tripletecategory": "Niñas",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circon natural.",
             "price": 990000,
-            "star": "4.3★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -1590,12 +1611,12 @@ const data = {
             ],
         }, {
             "title": "Dije Niño",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Niños",
+            "subcategory": "Dijes",
+            "tripletecategory": "Niños",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circon natural.",
             "price": 990000,
-            "star": "3.9★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -1685,12 +1706,12 @@ const data = {
             ],
         }, {
             "title": "Dije Papá",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Hombre",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circon natural.",
             "price": 1090000,
-            "star": "4.0★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -1780,12 +1801,12 @@ const data = {
             ],
         }, {
             "title": "Dije Mamá",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circon natural.",
             "price": 1090000,
-            "star": "4.0★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -1875,12 +1896,12 @@ const data = {
             ],
         }, {
             "title": "Dije Niña Trapo",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Niños",
+            "subcategory": "Dijes",
+            "tripletecategory": "Niñas",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circón natural.",
             "price": 1890000,
-            "star": "4.6★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -1966,12 +1987,12 @@ const data = {
             ],
         }, {
             "title": "Dije Niño Trapo",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Niños",
+            "subcategory": "Dijes",
+            "tripletecategory": "Niños",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circón natural.",
             "price": 1890000,
-            "star": "4.2★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -2053,12 +2074,12 @@ const data = {
             ],
         }, {
             "title": "Dije Rostro Pantera",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con diseño calado.",
             "price": 1000000,
-            "star": "3.9★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -2136,12 +2157,12 @@ const data = {
             ],
         }, {
             "title": "Dije Relicario Corazón",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K doble faz.",
             "price": 2490000,
-            "star": "4.0★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -2219,12 +2240,12 @@ const data = {
             ],
         }, {
             "title": "Dije Cruz Estilizada",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circon natural.",
             "price": 1190000,
-            "star": "4.4★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -2318,12 +2339,12 @@ const data = {
             ],
         }, {
             "title": "Dije Dado Personalizado",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circon natural.",
             "price": 3990000,
-            "star": "4.0★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -2409,12 +2430,12 @@ const data = {
             ],
         }, {
             "title": "Dije Candado",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circon natural, doble faz.",
             "price": 3890000,
-            "star": "3.9★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -2500,12 +2521,12 @@ const data = {
             ],
         }, {
             "title": "Dije Oso Corazón Globo",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Dijes",
+            "tripletecategory": "Destacado",
             "countInStock": 10,
             "description": "Dije elaborado en oro 18K con incrustaciones en circon natural.",
             "price": 3390000,
-            "star": "4.8★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -2591,12 +2612,12 @@ const data = {
             ],
         }, {
             "title": "Topos Corazon",
-            "category": "Mujeres",
-            "subcategory": "Nuevos",
+            "category": "Mujer",
+            "subcategory": "Aretes",
+            "tripletecategory": "Topos",
             "countInStock": 10,
             "description": "Topos elaborados en oro 18K con incrustaciones en circon natural.",
             "price": 1690000,
-            "star": "4.9★",
             "sizes": [
                 {
                     "value": "Ninguno",
@@ -2684,54 +2705,96 @@ const data = {
     ],
     category: [
         {
-            value: "Hombres",
-            label: "Hombres"
+            titlecategory: "Mujer",
         },
         {
-            value: "Mujeres",
-            label: "Mujeres"
+            titlecategory: "Hombre",
         },
         {
-            value: "Niños",
-            label: "Niños"
+            titlecategory: "Niños",
         },
         {
-            value: "Niñas",
-            label: "Niñas"
+            titlecategory: "Destacado",
+        },
+        {
+            titlecategory: "Nuevo",
+        },
+        {
+            titlecategory: "A'Maria",
         },
     ],
     subcategory: [
         {
             checked: false,
-            label: 'Nuevos'
+            titlesubcategory: "Cadenas",
         },
         {
             checked: false,
-            label: 'Destacados'
+            titlesubcategory: "Dijes",
+        },
+        {
+            checked: false,
+            titlesubcategory: "Aretes",
+        },
+        {
+            checked: false,
+            titlesubcategory: "Aros",
+        },
+        {
+            checked: false,
+            titlesubcategory: "Anillos",
+        },
+        {
+            checked: false,
+            titlesubcategory: "Pulseras",
+        },
+        {
+            checked: false,
+            titlesubcategory: "Topilleras",
+        },
+        {
+            checked: false,
+            titlesubcategory: "Niñas",
+        },
+        {
+            checked: false,
+            titlesubcategory: "Niños",
         },
     ],
-    rating: [
+    tripletecategory: [
         {
-            value: '1',
-            label: "1★"
+            checked: false,
+            titletripletecategory: "Topos",
         },
         {
-            value: '2',
-            label: "2★"
+            checked: false,
+            titletripletecategory: "Candongas",
         },
         {
-            value: '3',
-            label: "3★"
+            checked: false,
+            titletripletecategory: "Cadenas",
         },
         {
-            value: '4',
-            label: "4★"
+            checked: false,
+            titletripletecategory: "Dijes",
         },
         {
-            value: '5',
-            label: "5★"
+            checked: false,
+            titletripletecategory: "Niñas",
         },
-    ]
+        {
+            checked: false,
+            titletripletecategory: "Niños",
+        },
+        {
+            checked: false,
+            titletripletecategory: "Destacado",
+        },
+        {
+            checked: false,
+            titletripletecategory: "Nuevo",
+        },
+    ],
 }
 
 export default data;
