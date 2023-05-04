@@ -48,7 +48,7 @@ Luego de terminar de instalar las dependencias, puede arrancar el proyecto de un
 
 ### Guiones disponibles
 
-### En el directorio del proyecto, puede ejecutar:
+### En el directorio del proyecto, puede ejecutar. :\*
 
 ## `npm start`
 
@@ -58,7 +58,7 @@ Luego de terminar de instalar las dependencias, puede arrancar el proyecto de un
 
 ## `MI INFORMACIÓN. :*`
 
-### Puedes aprender más en el: [https://apr1991lino.vercel.app/)
+### Puedes aprender más en el. :\* [https://apr1991lino.vercel.app/)
 
 ### Luego navegue en la plataforma.
 
@@ -66,4 +66,4 @@ Luego de terminar de instalar las dependencias, puede arrancar el proyecto de un
 
 ## `Feliz Revisión 😎🤞. :*`
 
-### Creditos: Este proyecto lo desarrollo Adrián Páez.
+### Creditos. :\* Este proyecto lo desarrollo Adrián Páez.
