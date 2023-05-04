@@ -1,5 +1,7 @@
 # Proyecto Plataforma Joyería.
 
+(https://user-images.githubusercontent.com/54821048/236281074-bc6f392e-594a-41cd-8589-b0601e6b528e.png)
+
 ===========================================================================
 
 Como arrancar el proyecto Primero dirijase al package.json para ver los scripts.
@@ -39,7 +41,8 @@ Que Servidor Es: http://localhost:5000 <br />
 
 ===========================================================================
 
-<h3 align="left">Idiomas y Herramientas:</h3>
+### `<h3 align="left">Idiomas y Herramientas:</h3>`
+
 <p align="left">
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
