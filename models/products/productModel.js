@@ -3,9 +3,9 @@ import mongoose from 'mongoose';
 
 const productSchema = new mongoose.Schema({
     title: { type: String, required: true },
-    category: { type: String, required: true },
-    subcategory: { type: String, required: true },
-    tripletecategory: { type: String, required: true },
+    categoryOptions: { type: String, required: true },
+    subcategoryOptions: { type: String, required: true },
+    tripletecategoryOptions: { type: String, required: true },
     countInStock: { type: Number, required: true, default: 0 },
     description: { type: String, required: true },
     price: { type: Number, required: true },
