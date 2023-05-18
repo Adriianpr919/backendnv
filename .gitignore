@@ -1,13 +1,7 @@
 # dependencies
 /node_modules/
 /.pnp
-.pnp.js.jsx
-
-# next.js
-/.next/
+.pnp
 
 # local env files
 .env*.local
-
-# vercel
-.vercel

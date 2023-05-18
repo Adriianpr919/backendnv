@@ -54,12 +54,12 @@ productRouter.put('/update', async (req, res) => {
     //if product exists
     if (product) {
         product.title = req.body.title || product.title;
-        product.category = req.body.category || product.category;
-        product.subcategory = req.body.subcategory || product.subcategory;
+        product.categoryOptions = req.body.categoryOptions || product.categoryOptions;
+        product.subcategoryOptions = req.body.subcategoryOptions || product.subcategoryOptions;
+        product.tripletecategoryOptions = req.body.tripletecategoryOptions || product.tripletecategoryOptions;
         product.countInStock = req.body.countInStock || product.countInStock;
         product.description = req.body.description || product.description;
         product.price = req.body.price || product.price;
-        product.star = req.body.star || product.star;
         product.sizes = req.body.sizes || product.sizes;
         product.colors = req.body.colors || product.colors;
         product.image = req.body.image || product.image;
@@ -70,12 +70,12 @@ productRouter.put('/update', async (req, res) => {
 
             _id: updatedProduct._id,
             title: updatedProduct.title,
-            category: updatedProduct.category,
-            subcategory: updatedProduct.subcategory,
+            categoryOptions: updatedProduct.categoryOptions,
+            subcategoryOptions: updatedProduct.subcategoryOptions,
+            tripletecategoryOptions: updatedProduct.tripletecategoryOptions,
             countInStock: updatedProduct.countInStock,
             description: updatedProduct.description,
             price: updatedProduct.price,
-            star: updatedProduct.star,
             sizes: updatedProduct.sizes,
             colors: updatedProduct.colors,
             image: updatedProduct.image,
@@ -93,12 +93,12 @@ productRouter.put('/update', async (req, res) => {
 productRouter.post('/add', async (req, res) => {
     const newProduct = new Product({
         title: req.body.title,
-        category: req.body.category,
-        subcategory: req.body.subcategory,
+        categoryOptions: req.body.categoryOptions,
+        subcategoryOptions: req.body.subcategoryOptions,
+        tripletecategoryOptions: req.body.tripletecategoryOptions,
         countInStock: req.body.countInStock,
         description: req.body.description,
         price: req.body.price,
-        star: req.body.star + '★',
         sizes: req.body.sizes,
         colors: req.body.colors,
         image: req.body.image,
@@ -108,12 +108,12 @@ productRouter.post('/add', async (req, res) => {
     res.send({
         _id: product._id,
         title: product.title,
-        category: product.category,
-        subcategory: product.subcategory,
+        categoryOptions: product.categoryOptions,
+        subcategoryOptions: product.subcategoryOptions,
+        tripletecategoryOptions: product.tripletecategoryOptions,
         countInStock: product.countInStock,
         description: product.description,
         price: product.price,
-        star: product.star,
         sizes: product.sizes,
         colors: product.colors,
         image: product.image,
