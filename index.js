@@ -1,4 +1,5 @@
 import express, { urlencoded } from 'express'; //"type": "module",
+import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -22,7 +23,7 @@ import orderRouter from './routes/orders/orderRoute.js';
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 const app = express();
-
+app.use(cors());
 //It is used for the put or post method only, so that we can save what we are sending (object, req.body)
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -43,14 +44,21 @@ app.use('/api/orders', orderRouter);
 dotenv.config();
 mongoose.set('autoIndex', false);
 mongoose.set('strictQuery', false);
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, autoIndex: false }).then(() => {
-    console.log("¡.Conectado a Base De Datos.!");
-}).catch((error) => {
+mongoose
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    autoIndex: false
+  })
+  .then(() => {
+    console.log('¡.Conectado a Base De Datos.!');
+  })
+  .catch((error) => {
     console.log(error.message);
-})
+  });
 
 //create PORT
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-    console.log(`Que Servidor Es: http://localhost:${PORT}`);
+  console.log(`Que Servidor Es: http://localhost:${PORT}`);
 });
